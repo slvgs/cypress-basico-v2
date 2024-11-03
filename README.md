@@ -1,29 +1,18 @@
-# Testes automatizados com Cypress - Básico
+## Seção 3 
 
-👋 Seja bem-vindo(a)!
+Abordado nessa seção os principais comandos para um teste básico em uma aplicação de atendimento/formulário online, onde foi realizado testes explorando as funcionalidades dos comandos:
+- cy.vistit
+- should
+- type
+- click
+- get
+- beforeEach
+- select
+- clear
+- contains
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Também foi realizado a leitura de um artigo referente aos testes reutilizávei e personalizados e como aplica-los na pasta support e no arquivo command.js os chamand na aplicação de teste (assim permitindo que a estrutura seja menos poluída) e a introdução da diferença entre:
+import './api_commands'
+import './gui_commands'
 
-## O que você vai aprender
-
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
-
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-
-## Vamos começar?
-
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
-
-___
-
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+![](./image/Captura%20de%20tela%202024-11-02%20211100.png)

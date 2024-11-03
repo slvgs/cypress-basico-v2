@@ -112,7 +112,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
     //Exerrcicio5
 
-    it.only('preenche e limpa os campos nome, sobrenome, email e telefone', function(){
+    it('preenche e limpa os campos nome, sobrenome, email e telefone', function(){
 
         cy.get('input[name="firstName"]')
         .type('Gabriella')
@@ -152,11 +152,51 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
 
     })
+
+    //Exercicio 6
+
+    it('exibe mensagem de erro ao submeter o formulário sem preencher os campos obrigatórios', function(){
+
+
+        cy.get('button').click()// clicar no botão
+
+        cy.get('.error').should('be.visible')
+       
+
+
+    })
+
+
+    //Exercicio 7
+
+    it.only('envia o formulário com sucesso usando um comando customizado', function(){
+
+
+        cy.fillMandatoryFieldsAndSubmit() //esse comando é um customizado, para eliminar a duplicação de código, utilizando como suporte a pasta "support" no arquivo de "commands.js"
+        cy.get('.success').should('be.visible')
+
+
+    })
+
+    //Exercicio 8
+
+    it('buscar o elemento que deseja identificar para realizar a ação', function(){
+
+        cy.contains('button', 'Enviar').click()
+
+
+
+    })
+
         
   })
 
-  //Exercicio 6
-  
+
+
+
+
+
+
 
 
 
