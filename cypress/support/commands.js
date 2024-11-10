@@ -17,7 +17,26 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
     cy.contains('button', 'Enviar').click()
 
 
+})
 
+Cypress.Commands.add('selectOneProductfortext', function(){
+
+    cy.get('#product').select('YouTube').should('have.value', 'youtube')//nesse select buscamos o texto da opção
+
+
+})
+
+
+Cypress.Commands.add('selectOneProductforvalue', function(){
+
+    cy.get('#product').select('blog').should('have.value', 'blog') //nesse select buscamos a opção do "value"
+
+
+})
+
+Cypress.Commands.add('selectOneProductforIndice', function(){
+
+    cy.get('#product').select(3).should('have.value', 'mentoria') //nesse select buscamos a opção do "value"
 
 
 })

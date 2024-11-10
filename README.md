@@ -10,6 +10,7 @@ Abordado nessa seção os principais comandos para um teste básico em uma aplic
 - select
 - clear
 - contains
+- select
 
 Também foi realizado a leitura de um artigo referente aos testes reutilizávei e personalizados e como aplica-los na pasta support e no arquivo command.js os chamand na aplicação de teste (assim permitindo que a estrutura seja menos poluída) e a introdução da diferença entre:
 import './api_commands'
