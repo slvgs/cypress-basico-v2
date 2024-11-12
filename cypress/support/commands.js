@@ -40,3 +40,24 @@ Cypress.Commands.add('selectOneProductforIndice', function(){
 
 
 })
+
+Cypress.Commands.add('marcaOTipoDeAtendimentoFeedback', function(){
+
+    cy.get('input[type="radio"]').check('feedback').should('have.value', 'feedback')
+
+
+})
+
+Cypress.Commands.add('marcaCadaTipo', function(){
+
+
+    cy.get('input[type="radio"]')
+        .should('have.length', 3)
+        .each(function($radio){//COM O EACH PODE SER APLICADO UMA FUNÇÃO PARA CADA ITEM, PORÉM DEVE SER ACOMPANHADO COM CY.WRAP
+            cy.wrap($radio).check()//CY.WRAP ENCAPSUA O ITEM E PERMITE Q TESTE O ITEM INDICADO
+            cy.wrap($radio).should('be.checked')
+        })
+
+
+})
+

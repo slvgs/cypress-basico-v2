@@ -6,29 +6,42 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             cy.visit('./src/index.html')
         })
 
-    it.only('envia o formulário com sucesso usando um comando customizado', function(){
+    it('envia o formulário com sucesso usando um comando customizado', function(){
 
         cy.fillMandatoryFieldsAndSubmit() //esse comando é um customizado, para eliminar a duplicação de código, utilizando como suporte a pasta "support" no arquivo de "commands.js"
         cy.get('.success').should('be.visible')
 
     })
-    it.only('selecionar a opção youtube do seletor', function(){
+    it('selecionar a opção youtube do seletor', function(){
 
         cy.selectOneProductfortext()
 
     })
 
-    it.only('selecionar a opção blog do seletor', function(){
+    it('selecionar a opção blog do seletor', function(){
 
         cy.selectOneProductforvalue()
 
     })
 
-    it.only('selecionar a opção blog do seletor', function(){
+    it('selecionar a opção blog do seletor', function(){
 
         cy.selectOneProductforIndice()
 
     })
+
+    it.only('marca o tipo de atendimento "Feedback', function(){
+
+        cy.marcaOTipoDeAtendimentoFeedback()
+
+    })
+
+    it.only('marca o tipo de atendimento "Feedback', function(){
+
+        cy.marcaCadaTipo()
+
+    })
+
 
 
 
