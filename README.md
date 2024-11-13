@@ -14,9 +14,18 @@ Abordado nessa seção os principais comandos para um teste básico em uma aplic
 - check
 - each
 - wrap
+- uncheck
+- last
+- expect 
+- selectFile
 
-Também foi realizado a leitura de um artigo referente aos testes reutilizávei e personalizados e como aplica-los na pasta support e no arquivo command.js os chamand na aplicação de teste (assim permitindo que a estrutura seja menos poluída) e a introdução da diferença entre:
-import './api_commands'
-import './gui_commands'
+Também foi realizado a leitura de artigos para complemento do aprendizado em aula e aplicados nos testes.
+Aritgos estudados para complementação do aprendizado:
+-  [Aprenda como remover duplicações na chamada do comando .check( )](https://talkingabouttesting.com/2021/06/14/como-marcar-varios-checkboxes-de-uma-so-vez-com-cypress/)
+- [Como proteger credenciais de acesso, tais como usuário e senha no Cypress](https://talkingabouttesting.com/2021/02/09/como-proteger-dados-sensiveis-com-cypress/)
 
-![](./image/Captura%20de%20tela%202024-11-02%20211100.png)
+- [ Testes reutilizáveis e personalizados](https://talkingabouttesting.com/2021/02/10/como-criar-comandos-customizados-com-cypress/)
+
+- [Como criar comandos customizados com Cypress](https://talkingabouttesting.com/2021/02/10/como-criar-comandos-customizados-com-cypress/)
+
+![](./image/2024-11-13_12h58_54.png)
